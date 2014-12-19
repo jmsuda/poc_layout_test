@@ -1,0 +1,4 @@
+To run, use this command:
+
+
+APPLITOOLS_KEY='yourApplitoolsKey' SAUCE_USERNAME='yourSauceUserName' SAUCE_ACCESS_KEY='yourSauceAccessKeyw' BROWSER='chrome' ruby hope.rb

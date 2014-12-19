@@ -31,14 +31,14 @@ require 'eyes_selenium'
   
   begin
 
-     eyes = Applitools::Eyes.new
+    eyes = Applitools::Eyes.new
     # This is your api key, make sure you use it in all your tests.
     eyes.api_key = ENV['APPLITOOLS_KEY']
 
 	  eyes.test(app_name: 'Applitools', test_name: 'hope_test', viewport_size: {width: 1024, height: 768}, driver: @my_webdriver) do |driver|
 	  driver.get 'http://www.hopelingerie.com.br/logincadastro.aspx'
-	  driver.find_element(:id, "txtEmail").send_keys("teste@chaordicsystems.com")
-	  driver.find_element(:id, "txtSenha").send_keys("services")
+	  driver.find_element(:id, "txtEmail").send_keys("seuemail@teste.com.br")
+	  driver.find_element(:id, "txtSenha").send_keys("suasenha")
 	  driver.find_element(:id, "enter").click 
     driver.find_element(:id, "fancybox-close").click
     driver.get 'http://www.hopelingerie.com.br'
